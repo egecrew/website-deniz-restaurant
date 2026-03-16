@@ -109,7 +109,14 @@ function App() {
                 <li>✓ Müşteri odaklı yaklaşım</li>
                 <li>✓ Gücendirilmiş süreler</li>
               </ul>
-            </div>
+            <div style={{marginTop: '1.5rem', padding: '1rem', backgroundColor: '#f8f9fa', borderRadius: '8px'}}>
+                <strong>🌐 Demo Web Sitesi:</strong>
+                <br />
+                <a href="https://egecrew.github.io/website-deniz-restaurant/" target="_blank" rel="noopener noreferrer" style={{color: '#0066cc'}}>
+                  egecrew.github.io/website-deniz-restaurant
+                </a>
+              </div>
+              </div>
             <div className="about-visual">
               <div className="about-box">
                 <div className="about-number">15+</div>
