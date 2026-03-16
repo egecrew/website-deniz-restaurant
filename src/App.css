@@ -674,3 +674,38 @@ section {
     gap: 1.5rem;
   }
 }
+
+
+/* Demo Section Styles */
+.demo-section {
+  margin-top: 1.5rem;
+}
+
+.demo-box {
+  padding: 1.2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  text-align: center;
+}
+
+.demo-box strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.demo-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+  padding: 0.3rem 0;
+}
+
+.demo-link:hover {
+  color: #0052a3;
+  text-decoration: underline;
+}
