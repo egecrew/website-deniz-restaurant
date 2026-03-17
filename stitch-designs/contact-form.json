@@ -1,0 +1,64 @@
+{
+  "outputComponents": [
+    {
+      "design": {
+        "deviceType": "DESKTOP",
+        "screens": [
+          {
+            "deviceType": "DESKTOP",
+            "generatedBy": "figaro_agent",
+            "height": "2938",
+            "htmlCode": {
+              "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzY0ODY0YzgzYzA4ZDQ5NGZhMjNhZTg2YjZmMTIzMzY1EgsSBxCekPP4pRgYAZIBIwoKcHJvamVjdF9pZBIVQhM1NjcwMzcyNTExMDY3NzI5MjA4&filename=&opi=96797242",
+              "mimeType": "text/html",
+              "name": "projects/5670372511067729208/files/01a83996c5e444219060960a9ab8cab2"
+            },
+            "id": "249004127cb7408f87be9b25f1a43309",
+            "name": "projects/5670372511067729208/screens/249004127cb7408f87be9b25f1a43309",
+            "prompt": "Title: Deniz Restaurant Reservation and Contact Section\nContext: Mediterranean seafood restaurant website landing page.\nDescription of the screen: A sophisticated 'Bize Ulaşın' (Contact Us) and Reservation section for Deniz Restaurant. The layout is split into two columns on a light cream/sand background. The left column displays contact information in elegant white cards with soft shadows, featuring icons for Address (Çarşı, Belediye Meydanı No 4), Phone (+90 252 363 76 74), Hours (Her Gün 08:00 - 00:00), and a star icon for the 4.8/5 Google rating. The right column contains a professional 'Rezervasyon Yap' form with clean, labeled fields: Adınız Soyadınız, E-posta, Telefon, Tarih, Kişi Sayısı, and a Mesajınız textarea. The form features a prominent gold (#d4af37) 'Rezervasyon Gönder' button. A subtle success checkmark indicator is positioned near the button. The overall style uses deep ocean blue (#1a365d) for text and headers, maintaining the restaurant's elegant branding.\nPlatform: web\nForm factor: desktop",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "DESIGN",
+            "screenshot": {
+              "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0ujTv9FbulIDpK846N0-jUIlqFiIV6-Hr2RpXlSJ31UJkqMsqPAUX4Ns3iId6P2r1v3BNBt03PfmWmLSrbQsssad1xDj1SaI9zcpl80cZ5usojfvIPJYoFd0mGdEr8oJlRZrX23B-ecbQwL4KnDGjeUO-DohBSmfQNM9LW_yc29VRK0iNoM19QVHtALG7GXDR1A-JQnx3N5SeV2XCxTzDDYgjx7bSP0yg12BEU7IsRf_1CHLnhbKWAAD8LQ",
+              "name": "projects/5670372511067729208/files/7ec4e4873a74495cb6bcbf1ba70c1a80"
+            },
+            "theme": {
+              "colorMode": "LIGHT",
+              "customColor": "#d4af35",
+              "font": "INTER",
+              "roundness": "ROUND_EIGHT",
+              "saturation": 2
+            },
+            "title": "Deniz Restaurant Reservation and Contact Section",
+            "width": "2560"
+          }
+        ],
+        "theme": {
+          "colorMode": "LIGHT",
+          "customColor": "#d4af35",
+          "font": "INTER",
+          "roundness": "ROUND_EIGHT",
+          "saturation": 2
+        },
+        "title": "Deniz Restaurant Reservation and Contact Section"
+      }
+    },
+    {
+      "text": "I've designed the **Bize Ulaşın (Contact Us) and Reservation** section for Deniz Restaurant:\n\n- **Deniz Restaurant Reservation and Contact Section**: This screen features a balanced two-column layout on a soft cream/sand background. The left side clearly displays essential contact info with modern icons and subtle cards, while the right side presents a professional, easy-to-use reservation form with a prominent gold submit button.\n\nWe have now designed the hero, the services/menu grid, and the contact/reservation section. Would you like to add a **Müşteri Yorumları (Customer Testimonials)** section or a **Galeri (Gallery)** to showcase the restaurant's views?"
+    },
+    {
+      "suggestion": "Design a \"Müşteri Yorumları\" section with high-rated reviews"
+    },
+    {
+      "suggestion": "Create a \"Galeri\" section featuring the waterfront dining views"
+    },
+    {
+      "suggestion": "Add a footer with social media links and an embedded Google Map"
+    }
+  ],
+  "projectId": "5670372511067729208",
+  "sessionId": "9396068256125156248"
+}

@@ -1,0 +1,144 @@
+{
+  "generated": "2026-03-17T12:08:42.008Z",
+  "projectId": "5670372511067729208",
+  "restaurant": {
+    "name": "Deniz Restaurant",
+    "location": "Bodrum, Turkey",
+    "cuisine": "Mediterranean seafood",
+    "rating": "4.8/5 stars",
+    "reviews": "1043+ reviews",
+    "phone": "+90 252 363 76 74",
+    "address": "Çarşı, Belediye Meydanı No 4, 48400 Bodrum/Muğla",
+    "hours": "08:00 - 00:00",
+    "tagline": "Bodrum'un Kalbinde, Denizin Tadında",
+    "colors": {
+      "primary": "#1a365d",
+      "secondary": "#d4af37",
+      "accent": "#4299e1"
+    }
+  },
+  "designs": [
+    {
+      "id": "hero",
+      "name": "Hero Section",
+      "screenId": "bb1cdae42d6c4f78b484d2a780bd695e",
+      "title": "Deniz Restaurant Hero Section",
+      "dimensions": "2560x3000",
+      "theme": {
+        "colorMode": "LIGHT",
+        "customColor": "#d9b74a",
+        "font": "PLUS_JAKARTA_SANS",
+        "roundness": "ROUND_EIGHT",
+        "saturation": 2
+      },
+      "htmlPath": "/Users/ebartan/clawd/agents/egecrew/projects/websites/website-deniz-restaurant/stitch-designs/hero.html",
+      "imagePath": "/Users/ebartan/clawd/agents/egecrew/projects/websites/website-deniz-restaurant/stitch-designs/hero.png",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzk1M2Y5NTE2NWFjMDRjOTliMWNiYTI2NWNlZDkxYzY5EgsSBxCekPP4pRgYAZIBIwoKcHJvamVjdF9pZBIVQhM1NjcwMzcyNTExMDY3NzI5MjA4&filename=&opi=96797242",
+      "imageUrl": "https://lh3.googleusercontent.com/aida/ADBb0ugAL-CKklO5Cv3kdkqKCozRtALjedX6Nd4-ZSWhC5v4pj0DGsPJX1kXv0qgEQ36Q1yOeD3QdGQ_WDKqJnOKEO80PUQ0_5c7BlqOdnaVvXgdYQshMXVzhnwrY6BxM1HqGK5cEiZksbsK5VawDf-EN3ANHijNKx8K8acIeS_Ee_GlPiW3SiE0b4lyVUkhzye4FWED8TEbfgywS8NThkR_SHXCIx4V41o7mDP-I1viFFnq3FtZkQuLyuBCWQ",
+      "suggestions": [
+        "Add a \"Lezzetlerimiz\" menu section below",
+        "Design a \"Galeri\" section with photos of the food and view",
+        "Create a reservation booking modal window"
+      ],
+      "success": true
+    },
+    {
+      "id": "menu-section",
+      "name": "Menu/Services Section",
+      "screenId": "4369c68b9a76408fbe178d1db1545c93",
+      "title": "Deniz Restaurant Menu Services Grid",
+      "dimensions": "2560x3226",
+      "theme": {
+        "colorMode": "LIGHT",
+        "customColor": "#d4af35",
+        "font": "INTER",
+        "roundness": "ROUND_EIGHT",
+        "saturation": 2
+      },
+      "htmlPath": "/Users/ebartan/clawd/agents/egecrew/projects/websites/website-deniz-restaurant/stitch-designs/menu-section.html",
+      "imagePath": "/Users/ebartan/clawd/agents/egecrew/projects/websites/website-deniz-restaurant/stitch-designs/menu-section.png",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2UwNzYwNTNkNjA0MjRjYzI5OTZlNmEyYWUzOGVjMWY3EgsSBxCekPP4pRgYAZIBIwoKcHJvamVjdF9pZBIVQhM1NjcwMzcyNTExMDY3NzI5MjA4&filename=&opi=96797242",
+      "imageUrl": "https://lh3.googleusercontent.com/aida/ADBb0uhY81_m5L2M8DAcxuAD_cG43EjkWH0ek0isw8xF93fZ8J3PziENIr-lJTD18OE2wErsB7ow4AaaYR_9O0tbUp_-QHiF7AEXXcVROKRw9zq2vpQM3Tx2nSTf8nlnLSHa_0cQUl-zBuGkeeNu0Ggk21rvLN7adUPlw0CkgPWszw19iaH16V7NzDowDjC0PGLePPEbQ3CiGw-9Tw8AQCbuE-Gv5qeObRkm81JcWMo2Wt8Fewof1sBvj9oXhQ",
+      "suggestions": [
+        "Design a \"Galeri\" section with high-quality photos",
+        "Add a \"Müşteri Yorumları\" (Customer Reviews) testimonial section",
+        "Create a full-page digital menu view for \"Deniz Ürünleri\""
+      ],
+      "success": true
+    },
+    {
+      "id": "contact-form",
+      "name": "Contact/Reservation Form",
+      "screenId": "249004127cb7408f87be9b25f1a43309",
+      "title": "Deniz Restaurant Reservation and Contact Section",
+      "dimensions": "2560x2938",
+      "theme": {
+        "colorMode": "LIGHT",
+        "customColor": "#d4af35",
+        "font": "INTER",
+        "roundness": "ROUND_EIGHT",
+        "saturation": 2
+      },
+      "htmlPath": "/Users/ebartan/clawd/agents/egecrew/projects/websites/website-deniz-restaurant/stitch-designs/contact-form.html",
+      "imagePath": "/Users/ebartan/clawd/agents/egecrew/projects/websites/website-deniz-restaurant/stitch-designs/contact-form.png",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzY0ODY0YzgzYzA4ZDQ5NGZhMjNhZTg2YjZmMTIzMzY1EgsSBxCekPP4pRgYAZIBIwoKcHJvamVjdF9pZBIVQhM1NjcwMzcyNTExMDY3NzI5MjA4&filename=&opi=96797242",
+      "imageUrl": "https://lh3.googleusercontent.com/aida/ADBb0ujTv9FbulIDpK846N0-jUIlqFiIV6-Hr2RpXlSJ31UJkqMsqPAUX4Ns3iId6P2r1v3BNBt03PfmWmLSrbQsssad1xDj1SaI9zcpl80cZ5usojfvIPJYoFd0mGdEr8oJlRZrX23B-ecbQwL4KnDGjeUO-DohBSmfQNM9LW_yc29VRK0iNoM19QVHtALG7GXDR1A-JQnx3N5SeV2XCxTzDDYgjx7bSP0yg12BEU7IsRf_1CHLnhbKWAAD8LQ",
+      "suggestions": [
+        "Design a \"Müşteri Yorumları\" section with high-rated reviews",
+        "Create a \"Galeri\" section featuring the waterfront dining views",
+        "Add a footer with social media links and an embedded Google Map"
+      ],
+      "success": true
+    },
+    {
+      "id": "gallery",
+      "name": "Photo Gallery",
+      "screenId": "cc3f1435a8904ddf80602c2e136c7464",
+      "title": "Deniz Restaurant Atmosphere Gallery Grid",
+      "dimensions": "2560x3780",
+      "theme": {
+        "colorMode": "DARK",
+        "customColor": "#ecb613",
+        "font": "WORK_SANS",
+        "roundness": "ROUND_EIGHT",
+        "saturation": 2
+      },
+      "htmlPath": "/Users/ebartan/clawd/agents/egecrew/projects/websites/website-deniz-restaurant/stitch-designs/gallery.html",
+      "imagePath": "/Users/ebartan/clawd/agents/egecrew/projects/websites/website-deniz-restaurant/stitch-designs/gallery.png",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzcyYjRhNzQxODA5MjQ5YTk4MTc0OTdhMDY1ZTBkMTNlEgsSBxCekPP4pRgYAZIBIwoKcHJvamVjdF9pZBIVQhM1NjcwMzcyNTExMDY3NzI5MjA4&filename=&opi=96797242",
+      "imageUrl": "https://lh3.googleusercontent.com/aida/ADBb0uigTDQlno4V5A-F5sWkD8Tx8pwMtl5j1-rVPlaY5SzIf59Ua46LKU4P0aJIxvTRUlJdjL_YSkwVE224CCZa8jJf7Nrhq1MewrnAm4h2-EhyPXb5xEVVl8BW1IG52KDZMa9uBzkqDwljNEFrmstFUDseE_YpXmMMZGnEXVWKFB3xwK-4t3IOUiGoaoSN4qNqdQ7gzPKuvPtcYgY50HoCNu0EzhHTAkUn7HmrQNoW3io19zgEACJNUkjYXQ",
+      "suggestions": [
+        "Design a \"Müşteri Yorumları\" section with high-rated reviews",
+        "Create a \"Footer\" with social media and an embedded Google Map",
+        "Add a floating \"Rezervasyon\" button for the entire landing page"
+      ],
+      "success": true
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "screenId": "bfae79fb515645b8ba14de3b328fa41b",
+      "title": "Deniz Restaurant Elegant Footer",
+      "dimensions": "2560x2048",
+      "theme": {
+        "colorMode": "DARK",
+        "customColor": "#ecb613",
+        "font": "WORK_SANS",
+        "roundness": "ROUND_FULL",
+        "saturation": 2
+      },
+      "htmlPath": "/Users/ebartan/clawd/agents/egecrew/projects/websites/website-deniz-restaurant/stitch-designs/footer.html",
+      "imagePath": "/Users/ebartan/clawd/agents/egecrew/projects/websites/website-deniz-restaurant/stitch-designs/footer.png",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2Y2YzM0ODhiYWZjMDQ2NWJhODdmYTc3ZGFiMzQ0YzU0EgsSBxCekPP4pRgYAZIBIwoKcHJvamVjdF9pZBIVQhM1NjcwMzcyNTExMDY3NzI5MjA4&filename=&opi=96797242",
+      "imageUrl": "https://lh3.googleusercontent.com/aida/ADBb0uigFqMPS6xGCm_rn1Sp8JZkwVYpbSMtgJua_jbwSvdtQX8jBC2o8bziM-5Q1OSr0p3T_dQ1PUACTW2YitnboDOCd1lxKaktJMK65egyQ8bokYzSPKtmRByf2VWosRJDF6YmkjJX5b2RahQLRwYimso6M4Y0LESkt3Mz6jKYMzcfTLmXnyKr9ddzBLgvIHoaaHJLMXewCxU7DzoXHdndYJfLavrdNI8Eu5prQrxe1XHGAygcN5XEuKopHSk",
+      "suggestions": [
+        "Design a \"Müşteri Yorumları\" review section",
+        "Create a digital menu page for \"Deniz Ürünleri\"",
+        "Add an embedded Google Map section above the footer"
+      ],
+      "success": true
+    }
+  ],
+  "successful": 5,
+  "failed": 0
+}

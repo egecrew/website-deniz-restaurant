@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d4af35",
+                        "brand-blue": "#1a365d",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#201d12",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .gold-divider {
+            background: linear-gradient(90deg, transparent 0%, #d4af35 50%, transparent 100%);
+            height: 2px;
+            width: 80px;
+            margin: 1.5rem auto;
+            position: relative;
+        }
+        .gold-divider::after {
+            content: '✻';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #f8f7f6;
+            padding: 0 10px;
+            color: #d4af35;
+            font-size: 0.8rem;
+        }
+        .card-hover:hover {
+            box-shadow: 0 20px 25px -5px rgba(212, 175, 53, 0.1), 0 10px 10px -5px rgba(212, 175, 53, 0.04);
+            border-color: #d4af35;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 bg-white/80 backdrop-blur-md px-6 lg:px-40 py-4 sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl">sailing</span>
+</div>
+<h1 class="font-serif text-2xl font-bold tracking-tight text-brand-blue">Deniz Restaurant</h1>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-8">
+<a class="text-slate-700 hover:text-primary text-sm font-semibold transition-colors" href="#">Ana Sayfa</a>
+<a class="text-slate-700 hover:text-primary text-sm font-semibold transition-colors" href="#">Menü</a>
+<a class="text-slate-700 hover:text-primary text-sm font-semibold transition-colors" href="#">Hakkımızda</a>
+<a class="text-slate-700 hover:text-primary text-sm font-semibold transition-colors" href="#">İletişim</a>
+</nav>
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-full h-11 px-6 bg-primary hover:bg-primary/90 text-white text-sm font-bold transition-all shadow-md">
+<span>Rezervasyon Yap</span>
+</button>
+</div>
+<div class="lg:hidden">
+<span class="material-symbols-outlined text-brand-blue">menu</span>
+</div>
+</header>
+<main class="flex-1">
+<!-- Hero (Subtle Background) -->
+<section class="relative h-[409px] flex items-center justify-center bg-brand-blue overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+<img alt="Bodrum coast aerial view" class="w-full h-full object-cover" data-alt="Aerial view of Mediterranean blue waters" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX_xL3Fv2qiBYIwq0Irn0if1HQDxZYIPWqpd3h5E6wpBKqbaMikXweuEfEArGOqDqLx8XyvIcwRn2sK99wdHJZz0uFgZX6isRAt2RMTnefFsnf_SA_ojO-mVO1Cwyo516E9BPWtDuJ76djSZKe2paHn0aX-U8wHzdGQHhnbjeDiPKHFZNXX0irQ708ApARWYeALreJv8OMBTTA3Xrf-Hlwysto5HQFxZgA5WfwQeLPAeXJsZ--hirVK1NBpQ9uMXX81bBHVYjVCek"/>
+</div>
+<div class="relative z-10 text-center px-4">
+<h2 class="font-serif text-4xl lg:text-5xl text-white mb-4">Bodrum'un Kalbinde Lezzet Yolculuğu</h2>
+<p class="text-primary/90 text-lg max-w-2xl mx-auto">Ege'nin taze esintisi ve en seçkin deniz ürünleriyle unutulmaz bir deneyim.</p>
+</div>
+</section>
+<!-- Special Flavors Section -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+<div class="text-center mb-16">
+<h3 class="font-serif text-3xl lg:text-4xl text-brand-blue dark:text-primary mb-2">Özel Lezzetlerimiz</h3>
+<div class="gold-divider"></div>
+<p class="text-slate-500 max-w-xl mx-auto italic">Geleneksel tariflerin modern dokunuşlarla buluştuğu eşsiz menümüzü keşfedin.</p>
+</div>
+<!-- 3x2 Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Deniz Ürünleri -->
+<div class="card-hover flex flex-col items-center text-center p-8 bg-white dark:bg-slate-800 rounded-xl border border-primary/10 transition-all group">
+<div class="mb-6 p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">set_meal</span>
+</div>
+<h4 class="font-serif text-xl text-brand-blue dark:text-primary mb-3 font-bold">Deniz Ürünleri</h4>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                            Günlük taze avlanan, mevsimine uygun balık çeşitleri ve usta ellerden çıkan ızgara lezzetler.
+                        </p>
+</div>
+<!-- Card 2: Meze & Salatalar -->
+<div class="card-hover flex flex-col items-center text-center p-8 bg-white dark:bg-slate-800 rounded-xl border border-primary/10 transition-all group">
+<div class="mb-6 p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">flatware</span>
+</div>
+<h4 class="font-serif text-xl text-brand-blue dark:text-primary mb-3 font-bold">Meze &amp; Salatalar</h4>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                            Zeytinyağlılar ve taze bahçemizden gelen malzemelerle hazırlanan geleneksel Akdeniz mezeleri.
+                        </p>
+</div>
+<!-- Card 3: İçecekler -->
+<div class="card-hover flex flex-col items-center text-center p-8 bg-white dark:bg-slate-800 rounded-xl border border-primary/10 transition-all group">
+<div class="mb-6 p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">wine_bar</span>
+</div>
+<h4 class="font-serif text-xl text-brand-blue dark:text-primary mb-3 font-bold">İçecekler</h4>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                            Özenle seçilmiş yerel Türk şarapları ve yemeğinize eşlik edecek ferahlatıcı kokteyl seçenekleri.
+                        </p>
+</div>
+<!-- Card 4: Tatlılar -->
+<div class="card-hover flex flex-col items-center text-center p-8 bg-white dark:bg-slate-800 rounded-xl border border-primary/10 transition-all group">
+<div class="mb-6 p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">bakery_dining</span>
+</div>
+<h4 class="font-serif text-xl text-brand-blue dark:text-primary mb-3 font-bold">Tatlılar</h4>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                            Ev yapımı şerbetli tatlılar, dondurmalı sunumlar ve geleneksel Türk mutfağının en tatlı finalleri.
+                        </p>
+</div>
+<!-- Card 5: Özel Günler -->
+<div class="card-hover flex flex-col items-center text-center p-8 bg-white dark:bg-slate-800 rounded-xl border border-primary/10 transition-all group">
+<div class="mb-6 p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">celebration</span>
+</div>
+<h4 class="font-serif text-xl text-brand-blue dark:text-primary mb-3 font-bold">Özel Günler</h4>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                            Düğün, nişan ve tüm özel davetleriniz için tasarlanmış VIP alanlarımız ve kişiye özel menü hizmeti.
+                        </p>
+</div>
+<!-- Card 6: Deniz Manzarası -->
+<div class="card-hover flex flex-col items-center text-center p-8 bg-white dark:bg-slate-800 rounded-xl border border-primary/10 transition-all group">
+<div class="mb-6 p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">beach_access</span>
+</div>
+<h4 class="font-serif text-xl text-brand-blue dark:text-primary mb-3 font-bold">Deniz Manzarası</h4>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                            Ege'nin turkuaz sularına nazır, gün batımının eşsiz renkleri eşliğinde huzurlu bir akşam yemeği.
+                        </p>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-brand-blue text-white/70 py-12 px-6 lg:px-40">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-2xl text-primary">sailing</span>
+<h2 class="font-serif text-xl font-bold">Deniz Restaurant</h2>
+</div>
+<p class="text-sm max-w-xs text-center md:text-left">
+                        Bodrum'un en güzel koyunda, 1994'ten beri değişmeyen lezzet ve hizmet kalitesiyle.
+                    </p>
+</div>
+<div class="flex flex-wrap justify-center gap-6 text-sm">
+<a class="hover:text-primary transition-colors" href="#">Gizlilik Politikası</a>
+<a class="hover:text-primary transition-colors" href="#">Kullanım Şartları</a>
+<a class="hover:text-primary transition-colors" href="#">KVKK</a>
+<a class="hover:text-primary transition-colors" href="#">İletişim</a>
+</div>
+<div class="text-xs">
+                    © 2024 Deniz Restaurant Bodrum. Tüm Hakları Saklıdır.
+                </div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

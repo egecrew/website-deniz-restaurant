@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ecb613",
+                        "background-light": "#f8f8f6",
+                        "background-dark": "#221d10",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+        .ocean-gradient {
+            background: linear-gradient(180deg, #1a365d 0%, #000000 100%);
+        }
+        .wave-overlay {
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23000' fill-opacity='1' d='M0,192L48,197.3C96,203,192,213,288,192C384,171,480,117,576,112C672,107,768,149,864,165.3C960,181,1056,171,1152,149.3C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            mask-repeat: no-repeat;
+            mask-position: bottom;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<main class="flex-grow flex items-center justify-center p-10">
+<div class="text-center">
+<h1 class="text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">Deniz Restaurant</h1>
+<p class="text-slate-600 dark:text-slate-400">Gourmet Mediterranean Seafood Experience</p>
+</div>
+</main>
+<footer class="relative ocean-gradient text-slate-100 overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none" data-alt="Subtle geometric texture overlay"></div>
+<div class="max-w-7xl mx-auto px-6 pt-20 pb-10 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-4xl">set_meal</span>
+<h2 class="text-2xl font-bold tracking-tight text-primary">DENİZ RESTAURANT</h2>
+</div>
+<p class="text-slate-300 leading-relaxed max-w-xs">
+                            Bodrum'un en seçkin noktasında, denizin tazeliğini sofranıza taşıyan eşsiz Akdeniz lezzetleri.
+                        </p>
+<div>
+<span class="inline-flex items-center px-4 py-1.5 rounded-full border border-primary text-primary text-sm font-medium">
+                                Yemek &amp; İçecek
+                            </span>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h3 class="text-lg font-semibold text-primary/80 uppercase tracking-widest">İletişim</h3>
+<ul class="flex flex-col gap-4">
+<li class="flex items-start gap-3 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">phone_in_talk</span>
+<a class="text-slate-300 hover:text-primary transition-colors" href="tel:+902523637674">+90 252 363 76 74</a>
+</li>
+<li class="flex items-start gap-3 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">location_on</span>
+<span class="text-slate-300">Belediye Meydanı, No: 12<br/>48400 Bodrum, Türkiye</span>
+</li>
+<li class="flex items-start gap-3 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">alternate_email</span>
+<a class="text-slate-300 hover:text-primary transition-colors" href="mailto:contact@denizrestaurant.com">contact@denizrestaurant.com</a>
+</li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h3 class="text-lg font-semibold text-primary/80 uppercase tracking-widest">Çalışma Saatleri</h3>
+<div class="bg-primary/5 p-6 rounded-xl border border-primary/10">
+<div class="flex items-center gap-4 mb-2">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="text-xl font-medium text-slate-100">Her Gün Açık</span>
+</div>
+<div class="text-3xl font-light text-slate-100 tracking-tighter ml-10">
+                                08:00 — 00:00
+                            </div>
+</div>
+<div class="mt-auto flex gap-4">
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-primary/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
+<p>© 2026 Deniz Restaurant - Tüm hakları saklıdır</p>
+<div class="flex items-center gap-2">
+<span>Bodrum, Türkiye</span>
+<span class="text-base">🇹🇷</span>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

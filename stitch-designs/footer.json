@@ -1,0 +1,64 @@
+{
+  "outputComponents": [
+    {
+      "design": {
+        "deviceType": "DESKTOP",
+        "screens": [
+          {
+            "deviceType": "DESKTOP",
+            "generatedBy": "figaro_agent",
+            "height": "2048",
+            "htmlCode": {
+              "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2Y2YzM0ODhiYWZjMDQ2NWJhODdmYTc3ZGFiMzQ0YzU0EgsSBxCekPP4pRgYAZIBIwoKcHJvamVjdF9pZBIVQhM1NjcwMzcyNTExMDY3NzI5MjA4&filename=&opi=96797242",
+              "mimeType": "text/html",
+              "name": "projects/5670372511067729208/files/4f4bb11099e04658b207c059494b5250"
+            },
+            "id": "bfae79fb515645b8ba14de3b328fa41b",
+            "name": "projects/5670372511067729208/screens/bfae79fb515645b8ba14de3b328fa41b",
+            "prompt": "Title: Deniz Restaurant Elegant Footer\nContext: Mediterranean seafood restaurant website footer.\nDescription of the screen: A sophisticated three-column footer for Deniz Restaurant set against a dark ocean blue to black gradient background (#1a365d to #000000) with a subtle, elegant wave texture. Left column: A lobster icon alongside 'Deniz Restaurant' in gold Playfair Display, a brief tagline about Bodrum's finest Mediterranean seafood, and a 'Yemek & İçecek' category badge in a gold-bordered pill shape. Middle column: Contact information including the phone number '+90 252 363 76 74', 'Belediye Meydanı, Bodrum' address, and a contact email link, all with gold icons. Right column: Opening hours displayed as 'Her Gün Açık' and '08:00 - 00:00' in clean white Inter typography. The footer bottom features a thin gold divider, '© 2026 Deniz Restaurant - Tüm hakları saklıdır', and 'Bodrum, Türkiye' with a small Turkish flag icon. The design is high-contrast, professional, and continues the restaurant's premium branding.\nPlatform: web\nForm factor: desktop",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "DESIGN",
+            "screenshot": {
+              "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uigFqMPS6xGCm_rn1Sp8JZkwVYpbSMtgJua_jbwSvdtQX8jBC2o8bziM-5Q1OSr0p3T_dQ1PUACTW2YitnboDOCd1lxKaktJMK65egyQ8bokYzSPKtmRByf2VWosRJDF6YmkjJX5b2RahQLRwYimso6M4Y0LESkt3Mz6jKYMzcfTLmXnyKr9ddzBLgvIHoaaHJLMXewCxU7DzoXHdndYJfLavrdNI8Eu5prQrxe1XHGAygcN5XEuKopHSk",
+              "name": "projects/5670372511067729208/files/37b0c4ceb2624cb99c10974378a3bdcf"
+            },
+            "theme": {
+              "colorMode": "DARK",
+              "customColor": "#ecb613",
+              "font": "WORK_SANS",
+              "roundness": "ROUND_FULL",
+              "saturation": 2
+            },
+            "title": "Deniz Restaurant Elegant Footer",
+            "width": "2560"
+          }
+        ],
+        "theme": {
+          "colorMode": "DARK",
+          "customColor": "#ecb613",
+          "font": "WORK_SANS",
+          "roundness": "ROUND_FULL",
+          "saturation": 2
+        },
+        "title": "Deniz Restaurant Elegant Footer"
+      }
+    },
+    {
+      "text": "I've designed a sophisticated footer for **Deniz Restaurant**:\n\n- **Deniz Restaurant Elegant Footer**: This section features a clean, three-column layout on a deep ocean blue-to-black gradient with a subtle wave texture. It includes your contact details, hours of operation, and a professional copyright section with Bodrum, Türkiye, as the location.\n\nWe've now completed a full landing page for Deniz Restaurant, including:\n1.  **Hero Section**: Stunning visual and introduction.\n2.  **Menu Services**: Categories for seafood, starters, and more.\n3.  **Reservations & Contact**: Booking form and contact info.\n4.  **Gallery**: Atmospheric photos of your dishes and views.\n5.  **Footer**: Professional closing with key links.\n\nWould you like to add a **Müşteri Yorumları (Customer Reviews)** section to showcase those 1,000+ positive Google reviews?"
+    },
+    {
+      "suggestion": "Design a \"Müşteri Yorumları\" review section"
+    },
+    {
+      "suggestion": "Create a digital menu page for \"Deniz Ürünleri\""
+    },
+    {
+      "suggestion": "Add an embedded Google Map section above the footer"
+    }
+  ],
+  "projectId": "5670372511067729208",
+  "sessionId": "307019059203356053"
+}

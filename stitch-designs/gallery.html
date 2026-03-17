@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ecb613",
+                        "background-light": "#f8f8f6",
+                        "background-dark": "#181611",
+                        "ocean-blue": "#1a365d",
+                        "gold-accent": "#d4af37"
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-6 md:px-20 py-4 bg-background-dark/95 sticky top-0 z-50 backdrop-blur-sm">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">sailing</span>
+<h2 class="text-white text-xl font-bold leading-tight tracking-tight font-serif uppercase">Deniz Restaurant</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-10 items-center">
+<nav class="flex items-center gap-8">
+<a class="text-white/80 hover:text-primary transition-colors text-sm font-medium" href="#">Menü</a>
+<a class="text-primary text-sm font-medium border-b-2 border-primary" href="#">Galeri</a>
+<a class="text-white/80 hover:text-primary transition-colors text-sm font-medium" href="#">Hakkımızda</a>
+<a class="text-white/80 hover:text-primary transition-colors text-sm font-medium" href="#">Rezervasyon</a>
+</nav>
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-11 px-6 bg-primary text-background-dark text-sm font-bold transition-transform active:scale-95 shadow-lg shadow-primary/20">
+<span>Masa Ayırt</span>
+</button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-white">menu</span>
+</div>
+</header>
+<main class="flex-1 max-w-7xl mx-auto w-full px-4 py-12 md:py-20">
+<!-- Hero Title Section -->
+<div class="text-center mb-16">
+<h1 class="text-white font-serif text-4xl md:text-6xl font-bold mb-4 tracking-tight">Atmosferimizi Keşfedin</h1>
+<div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-slate-400 text-lg md:text-xl font-light max-w-2xl mx-auto">
+                Bodrum'un en güzel deniz manzarasıyla yemek keyfi ve Ege'nin taptaze lezzetleri sizi bekliktir.
+            </p>
+</div>
+<!-- Gallery Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 auto-rows-[250px]">
+<!-- Item 1: Large Feature -->
+<div class="gallery-item relative overflow-hidden rounded-xl sm:col-span-2 sm:row-span-2 group cursor-pointer shadow-2xl">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Elegant restaurant interior with white tablecloths and ocean views" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAppcm1CDiuYPT-3dL2fGkxhJK4L0LOciL_LbquwjruezC_jYjzuOCOdIKLD2B_nSjxKquMOK-ZtXz_OH5Ek57NN5oV7BkVMGZAoB1ceIggcXZuUQzUF_CWzjo5QRbqRgUQWmicGiqrrLnMHxUgvhue8Ns6xhOoNUdgdTi8OyhusKGql6QmxeE7306L8obpeA1RdK-lw5u3pkkk0uJegG1uWqVoB11TPn8ah3zDbJljaMUyvcPlHnGVMRPV_RBx6ah0_FyqfRrw4T0"/>
+<div class="overlay absolute inset-0 bg-ocean-blue/80 opacity-0 transition-opacity duration-500 flex flex-col items-center justify-center p-6 text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">fullscreen</span>
+<h3 class="text-gold-accent font-serif text-2xl font-bold mb-2">Şık İç Mekan</h3>
+<p class="text-white/80 text-sm">Geleneksel ve modernin eşsiz uyumu</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="gallery-item relative overflow-hidden rounded-xl group cursor-pointer shadow-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Freshly grilled mediterranean seabass with herbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZLCyA913Bc9TuiZk0UVHegWuofEsKEeYl3gNZQNj_maf2H5skPEM4cj0WSD-gNjPXBqlZi3BCFRGzrFexAgkbfxz97Jf7vfOfUyJfQ0YPd7N3kN9ZWI_sydfnQt5WmDQqoURBWC1Nm1kEKmJQasPto904T27w1mxQnd9_WvmBqFxlN-XB8X9rGYfhgDLbxTIpTSVzQ-f0iLibvXA73iJg64gHq_5EKCRMp7UsutPrZHaAEDEA1wTe8sbnl1Z6pwtxGt99s3vcfPA"/>
+<div class="overlay absolute inset-0 bg-ocean-blue/80 opacity-0 transition-opacity duration-500 flex flex-col items-center justify-center p-4 text-center border-2 border-primary/20 m-2 rounded-lg">
+<h3 class="text-gold-accent font-serif text-lg font-bold">Taze Deniz Ürünleri</h3>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="gallery-item relative overflow-hidden rounded-xl group cursor-pointer shadow-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Bodrum coast sunset from restaurant terrace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnlC1MJndk5nfiCVshdIzaHmN1O_SkljgQFOTxkkwGoh84c8f0HErZaZ0i92fbPhzHdj7bkUJv-4X1GSGfR1vw7zePZ4YHrg3EUe-qbboIpnPUGy07ccxh4b8wWvM3Hag13IwfuULE1Buw8IuBEHFgOW_eN8Fk9725T3lrkVkaDXVfyfqip06i0i_0J1LnWVKxUD_6Jc4-kdVLmmtcY1cZDlIK5SRJyB9HnO7SLD06EKLBHNxpXbA5quOVab0687Wps_e4DwBfMRQ"/>
+<div class="overlay absolute inset-0 bg-ocean-blue/80 opacity-0 transition-opacity duration-500 flex flex-col items-center justify-center p-4 text-center border-2 border-primary/20 m-2 rounded-lg">
+<h3 class="text-gold-accent font-serif text-lg font-bold">Deniz Manzarası</h3>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="gallery-item relative overflow-hidden rounded-xl group cursor-pointer shadow-xl sm:row-span-2">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Premium selection of chilled white wines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzj8E-kpNsczrI2Cv83hx4_8VBTpHXYFzA_J1mgsZB2Wplv1ztLRHF276pOzK8kvPRzld-whMUnzR48kzQcPbMKEA0-lyZvgGzl_6YYaICvYgvo8XVl3S6LtjBqeQuEXiipCuJ1a4gyTLVVORMQ_KwrGtud5Bv7ha9vDa8Q_OIM3JfeC3gRbXmmq2C0lkVGtzls0ELdt4cvv1SeBaVXUNDra8XzhQhaMUh_Y9Bv9_N-yU0I1_3DA71QOZ2sXdvHTuOTbxhKzy74Z4"/>
+<div class="overlay absolute inset-0 bg-ocean-blue/80 opacity-0 transition-opacity duration-500 flex flex-col items-center justify-center p-4 text-center border-2 border-primary/20 m-2 rounded-lg">
+<h3 class="text-gold-accent font-serif text-lg font-bold">Zengin Kav</h3>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="gallery-item relative overflow-hidden rounded-xl group cursor-pointer shadow-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Meticulously set table with crystal glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZYzQ87vEOAvRkFu-qtvHo8byoCY-toRlBhRKLZwfjnjH01CWPl4zXqEoy3s81gksCzKYmclAcc87lb2JW8arxbi3__vw35Fy2sOuhKYwFmYmbfqoQtr1pdV2f1kb0eFo9i0dRms_NqpINkdfE_llPgvOHw3ed6xDpWFtEa_TOTgNcVOiOYXgUPEtu1C6jRlCdfqTn5qH2tExJLAaP2JyqOVp3ohwKHMuPhGQnVJ0qq7Tq3WOddBps8ZF-mVMJ6t_Gkw8CqmbaMY8"/>
+<div class="overlay absolute inset-0 bg-ocean-blue/80 opacity-0 transition-opacity duration-500 flex flex-col items-center justify-center p-4 text-center border-2 border-primary/20 m-2 rounded-lg">
+<h3 class="text-gold-accent font-serif text-lg font-bold">Özel Masalar</h3>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="gallery-item relative overflow-hidden rounded-xl group cursor-pointer shadow-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Assorted mediterranean appetizers and mezes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxdgeJQucdIpHW2jfbZZs5RTmfLopgzZZ_2Hw7tOCEMuVStpx70HMdFmZTcKau8p3-oHW-tETffN5RUXQuIqUqEfa2TE2dngIgREvB-G-LDx_99iQADTA2h_aoLTqCjj1MNM0_Q-OZpNG7j_DyM0xoCNvE82eGg8yLFcQjJSWQAKA3WTP6XYNKxUR0BlW9AyvDBe_Z-ae5Iz-bdZR3foRT-5PPKH20TLVZlWdtzz01y3wNYtjaIpxpn5I3EmJpxoWbnMXyauVRMO4"/>
+<div class="overlay absolute inset-0 bg-ocean-blue/80 opacity-0 transition-opacity duration-500 flex flex-col items-center justify-center p-4 text-center border-2 border-primary/20 m-2 rounded-lg">
+<h3 class="text-gold-accent font-serif text-lg font-bold">Ege Mezeleri</h3>
+</div>
+</div>
+<!-- Item 7 -->
+<div class="gallery-item relative overflow-hidden rounded-xl group cursor-pointer shadow-xl sm:col-span-2">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Chef plating a gourmet seafood dish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKWb_amFKG42GnHYHr1y-9r3GvueLfmrINgCeixENVSWu1yHDyW8P8UQJ9m_W5IuIXy8tsKUDOHPx0-ckm9kpH3Ml387df3iC6mieteUBRYYO7qnojKeM5kc64MNZye47K9Ngwm4dnJL2NLOq_CqG_LxEiNvaZ9jeQASzMKdpSuYDEhi4JKHcwt-pm8avcMhZmX2cn9nvbjmiHab13Ls-DoX65C9caDA8vPicL8HNzRvDeOxQ6ZwI5FJshHXfhCiZ4gwlSnMU1yew"/>
+<div class="overlay absolute inset-0 bg-ocean-blue/80 opacity-0 transition-opacity duration-500 flex flex-col items-center justify-center p-4 text-center border-2 border-primary/20 m-2 rounded-lg">
+<h3 class="text-gold-accent font-serif text-xl font-bold">Mutfaktan Esintiler</h3>
+</div>
+</div>
+<!-- Item 8 -->
+<div class="gallery-item relative overflow-hidden rounded-xl group cursor-pointer shadow-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Golden hour lighting on terrace tables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgIx4ouHv5A0vqauAv1MIE6PIKUWE-OoH2i0bRLas2JYxTM4TUXZ39SHW1I4IK_Z--ylWZlgkFZK8tz3uO6baSCZ3K4Axlr94mNyGYtVsI9vmkQLetyGbnGZbF4Els_ik26chOjQG2Y6aR9OT3m22DsEIxrpOC1wNuro5dRo_CHBFeJmrro75tQdNdq8EeVQlbtvvvz6GICE6A51eGvNjqAw-tM16PWakcZY5P5mOSMhujSE1cEqKDrXf_DtV2ILWwauevekosYQE"/>
+<div class="overlay absolute inset-0 bg-ocean-blue/80 opacity-0 transition-opacity duration-500 flex flex-col items-center justify-center p-4 text-center border-2 border-primary/20 m-2 rounded-lg">
+<h3 class="text-gold-accent font-serif text-lg font-bold">Gün Batımı</h3>
+</div>
+</div>
+</div>
+<!-- Call to Action -->
+<div class="mt-20 text-center">
+<button class="inline-flex items-center gap-2 px-8 py-4 border-2 border-primary text-primary hover:bg-primary hover:text-background-dark transition-all rounded-lg font-bold group">
+                Daha Fazlasını Gör 
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-black/40 border-t border-white/5 px-6 py-12 mt-20">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3 text-white/50">
+<span class="material-symbols-outlined">anchor</span>
+<p class="text-sm">© 2024 Deniz Restaurant Bodrum. Tüm hakları saklıdır.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="#">İletişim</a>
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="#">Gizlilik Politikası</a>
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="#">KVKK Aydınlatma</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 transition-colors" href="#">
+<span class="material-symbols-outlined text-white/70 text-sm">camera</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 transition-colors" href="#">
+<span class="material-symbols-outlined text-white/70 text-sm">location_on</span>
+</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

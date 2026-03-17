@@ -1,0 +1,64 @@
+{
+  "outputComponents": [
+    {
+      "design": {
+        "deviceType": "DESKTOP",
+        "screens": [
+          {
+            "deviceType": "DESKTOP",
+            "generatedBy": "figaro_agent",
+            "height": "3780",
+            "htmlCode": {
+              "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzcyYjRhNzQxODA5MjQ5YTk4MTc0OTdhMDY1ZTBkMTNlEgsSBxCekPP4pRgYAZIBIwoKcHJvamVjdF9pZBIVQhM1NjcwMzcyNTExMDY3NzI5MjA4&filename=&opi=96797242",
+              "mimeType": "text/html",
+              "name": "projects/5670372511067729208/files/98f300821c23456ca1396a96c6e513c4"
+            },
+            "id": "cc3f1435a8904ddf80602c2e136c7464",
+            "name": "projects/5670372511067729208/screens/cc3f1435a8904ddf80602c2e136c7464",
+            "prompt": "Title: Deniz Restaurant Atmosphere Gallery Grid\nContext: Mediterranean seafood restaurant website landing page gallery section.\nDescription of the screen: A sophisticated 'Atmosferimizi Keşfedin' (Discover Our Atmosphere) gallery section for Deniz Restaurant. The section features a centered title in Playfair Display serif and a subtitle 'Bodrum\\'un en güzel deniz manzarasıyla yemek keyfi' in clean sans-serif. Below, a 4-column masonry grid displays 8 high-quality image placeholders showcasing the elegant restaurant interior, freshly grilled seafood dishes, stunning Bodrum sunset views, and meticulously set tables. Each gallery item features a smooth zoom-in hover effect with a semi-transparent deep ocean blue (#1a365d) overlay and a gold (#d4af37) caption reveal (e.g., 'Şık İç Mekan', 'Taze Deniz Ürünleri', 'Deniz Manzarası'). The layout is modern and visually immersive, suggesting a lightbox functionality for full-screen viewing.\nPlatform: web\nForm factor: desktop",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "DESIGN",
+            "screenshot": {
+              "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uigTDQlno4V5A-F5sWkD8Tx8pwMtl5j1-rVPlaY5SzIf59Ua46LKU4P0aJIxvTRUlJdjL_YSkwVE224CCZa8jJf7Nrhq1MewrnAm4h2-EhyPXb5xEVVl8BW1IG52KDZMa9uBzkqDwljNEFrmstFUDseE_YpXmMMZGnEXVWKFB3xwK-4t3IOUiGoaoSN4qNqdQ7gzPKuvPtcYgY50HoCNu0EzhHTAkUn7HmrQNoW3io19zgEACJNUkjYXQ",
+              "name": "projects/5670372511067729208/files/061ab5bcfb4c462cbb10a2cceded6166"
+            },
+            "theme": {
+              "colorMode": "DARK",
+              "customColor": "#ecb613",
+              "font": "WORK_SANS",
+              "roundness": "ROUND_EIGHT",
+              "saturation": 2
+            },
+            "title": "Deniz Restaurant Atmosphere Gallery Grid",
+            "width": "2560"
+          }
+        ],
+        "theme": {
+          "colorMode": "DARK",
+          "customColor": "#ecb613",
+          "font": "WORK_SANS",
+          "roundness": "ROUND_EIGHT",
+          "saturation": 2
+        },
+        "title": "Deniz Restaurant Atmosphere Gallery Grid"
+      }
+    },
+    {
+      "text": "I've designed the \"Atmosferimizi Keşfedin\" (Discover Our Atmosphere) gallery section for Deniz Restaurant:\n\n- **Deniz Restaurant Atmosphere Gallery Grid**: This section features a modern 4-column masonry grid that beautifully showcases your restaurant's interior, grilled seafood, and sunset views. Each image includes a smooth zoom-in hover effect with a deep ocean blue overlay and gold caption reveal, creating an immersive experience for potential diners.\n\nThe landing page now includes a hero, menu categories, reservations/contact, and a gallery. Would you like to finish it off with a **Müşteri Yorumları (Testimonials)** section or a **Footer** with social media links and an embedded Google Map?"
+    },
+    {
+      "suggestion": "Design a \"Müşteri Yorumları\" section with high-rated reviews"
+    },
+    {
+      "suggestion": "Create a \"Footer\" with social media and an embedded Google Map"
+    },
+    {
+      "suggestion": "Add a floating \"Rezervasyon\" button for the entire landing page"
+    }
+  ],
+  "projectId": "5670372511067729208",
+  "sessionId": "15528160811333478790"
+}

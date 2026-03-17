@@ -1,0 +1,64 @@
+{
+  "outputComponents": [
+    {
+      "design": {
+        "deviceType": "DESKTOP",
+        "screens": [
+          {
+            "deviceType": "DESKTOP",
+            "generatedBy": "figaro_agent",
+            "height": "3000",
+            "htmlCode": {
+              "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzk1M2Y5NTE2NWFjMDRjOTliMWNiYTI2NWNlZDkxYzY5EgsSBxCekPP4pRgYAZIBIwoKcHJvamVjdF9pZBIVQhM1NjcwMzcyNTExMDY3NzI5MjA4&filename=&opi=96797242",
+              "mimeType": "text/html",
+              "name": "projects/5670372511067729208/files/ee02f3fe63f84e6d918c2d4704cce988"
+            },
+            "id": "bb1cdae42d6c4f78b484d2a780bd695e",
+            "name": "projects/5670372511067729208/screens/bb1cdae42d6c4f78b484d2a780bd695e",
+            "prompt": "Title: Deniz Restaurant Hero Section\nContext: Mediterranean seafood restaurant website landing page.\nDescription of the screen: A stunning, full-width hero section for 'Deniz Restaurant' in Bodrum. The design features a breathtaking high-resolution background image of a coastal dining setting with the turquoise Aegean sea. Centered prominently is the restaurant name 'Deniz Restaurant' in elegant gold Playfair Display serif typography, with the Turkish tagline 'Bodrum\\'un Kalbinde, Denizin Tadında' directly underneath. A social proof badge displays a '4.8 star Google rating' with '1043+ reviews'. The primary CTA is a refined gold button labeled 'Rezervasyon Yap'. The navigation bar at the top includes Turkish links: 'Hakkımızda', 'Lezzetlerimiz', 'Galeri', and 'Rezervasyon'. The color palette uses deep ocean blue (#1a365d) for overlays, gold (#d4af37) for accents, and light blue (#4299e1) details. Subtle white wave patterns are integrated at the bottom of the section for a fluid transition.\nPlatform: web\nForm factor: desktop",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "DESIGN",
+            "screenshot": {
+              "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0ugAL-CKklO5Cv3kdkqKCozRtALjedX6Nd4-ZSWhC5v4pj0DGsPJX1kXv0qgEQ36Q1yOeD3QdGQ_WDKqJnOKEO80PUQ0_5c7BlqOdnaVvXgdYQshMXVzhnwrY6BxM1HqGK5cEiZksbsK5VawDf-EN3ANHijNKx8K8acIeS_Ee_GlPiW3SiE0b4lyVUkhzye4FWED8TEbfgywS8NThkR_SHXCIx4V41o7mDP-I1viFFnq3FtZkQuLyuBCWQ",
+              "name": "projects/5670372511067729208/files/05c7567ab4df4d5a92c14a61b2749885"
+            },
+            "theme": {
+              "colorMode": "LIGHT",
+              "customColor": "#d9b74a",
+              "font": "PLUS_JAKARTA_SANS",
+              "roundness": "ROUND_EIGHT",
+              "saturation": 2
+            },
+            "title": "Deniz Restaurant Hero Section",
+            "width": "2560"
+          }
+        ],
+        "theme": {
+          "colorMode": "LIGHT",
+          "customColor": "#d9b74a",
+          "font": "PLUS_JAKARTA_SANS",
+          "roundness": "ROUND_EIGHT",
+          "saturation": 2
+        },
+        "title": "Deniz Restaurant Hero Section"
+      }
+    },
+    {
+      "text": "I've designed a stunning, modern hero section for **Deniz Restaurant** in Bodrum:\n\n- **Deniz Restaurant Hero Section**: This full-width desktop design captures the essence of the Mediterranean with high-end coastal imagery, elegant serif typography in gold, and deep ocean blue accents. It features your Turkish tagline, social proof showing your 4.8-star rating, and a prominent \"Rezervasyon Yap\" call-to-action button.\n\nWould you like to build out the rest of the landing page, perhaps starting with a \"Lezzetlerimiz\" (Our Flavors) menu section?"
+    },
+    {
+      "suggestion": "Add a \"Lezzetlerimiz\" menu section below"
+    },
+    {
+      "suggestion": "Design a \"Galeri\" section with photos of the food and view"
+    },
+    {
+      "suggestion": "Create a reservation booking modal window"
+    }
+  ],
+  "projectId": "5670372511067729208",
+  "sessionId": "17678901710251620374"
+}
