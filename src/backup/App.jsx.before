@@ -1,0 +1,333 @@
+import { useState } from 'react'
+import './App.css'
+
+function App() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  })
+  const [submitted, setSubmitted] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData(prev => ({ ...prev, [name]: value }))
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log('Form submitted:', formData)
+    setSubmitted(true)
+    setTimeout(() => setSubmitted(false), 4000)
+    setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
+  }
+
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    setMenuOpen(false)
+  }
+
+  return (
+    <div className="app">
+      {/* Custom styles for Yemek & İçecek category */}
+      <style>{`
+        :root {
+          --primary-color: #e74c3c;
+          --primary-hover: #c0392b;
+          --accent-color: #d35400;
+        }
+        .hero {
+          background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+        }
+        .stat-box {
+          background: rgba(231, 76, 60, 0.1);
+          border: 2px solid #e74c3c;
+        }
+        .service-card:hover {
+          border-color: #e74c3c;
+        }
+        .service-icon {
+          color: #e74c3c;
+        }
+      `}</style>
+
+      {/* Header/Navigation */}
+      <header className="header">
+        <div className="container">
+          <div className="logo">🍽️ Deniz Restaurant</div>
+          
+          <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+            ☰
+          </button>
+
+          <nav className={`nav ${menuOpen ? 'open' : ''}`}>
+            <a href="#about" onClick={() => scrollToSection('about')}>Hakkında</a>
+            <a href="#services" onClick={() => scrollToSection('services')}>Hizmetler</a>
+            <a href="#gallery" onClick={() => scrollToSection('gallery')}>Galeri</a>
+            <a href="#contact" onClick={() => scrollToSection('contact')}>İletişim</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="hero-content">
+          <h1 className="hero-title">Deniz Restaurant</h1>
+          <p className="hero-subtitle">Yemek & İçecek - Bodrum</p>
+          <div className="hero-stats">
+            <div className="stat-box">
+              <div className="stat-number">⭐ 4.8</div>
+              <p>Müşteri Puanı</p>
+            </div>
+            <div className="stat-box">
+              <div className="stat-number">1043+</div>
+              <p>Mutlu Müşteri</p>
+            </div>
+            <div className="stat-box">
+              <div className="stat-number">💯</div>
+              <p>Kalite</p>
+            </div>
+          </div>
+          <button className="cta-button" onClick={() => scrollToSection('contact')}>
+            Bize Ulaşın
+          </button>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="about">
+        <div className="container">
+          <div className="section-header">
+            <h2>Hakkımızda</h2>
+            <div className="divider"></div>
+          </div>
+          
+          <div className="about-content">
+            <div className="about-text">
+              <p>
+                Deniz Restaurant olarak Bodrum'da yıllardır hizmet vermekteyiz. 
+                <strong> 4.8 yıldız</strong> müşteri puanımız ve <strong>1043+ olumlu yorumumuz</strong> ile 
+                bölgenin en güvenilir işletmelerinden biriyiz.
+              </p>
+              <ul className="about-list">
+                <li>✓ Profesyonel ekip</li>
+                <li>✓ Kaliteli hizmet</li>
+                <li>✓ Uygun fiyatlar</li>
+                <li>✓ Güler yüzlü yaklaşım</li>
+                <li>✓ Modern ekipmanlar</li>
+              </ul>
+              <div className="demo-section">
+                <div className="demo-box">
+                  <strong>📍 Adresimiz:</strong>
+                  <p>Çarşı, Belediye Meydanı no 4Bodrum, 48400 Bodrum/Muğla, Türkiye</p>
+                  <strong>📞 Telefon:</strong>
+                  <a href="tel:+902523637674" className="demo-link">+902523637674</a>
+                </div>
+              </div>
+            </div>
+            <div className="about-visual">
+              <div className="about-box">
+                <div className="about-number">⭐4.8</div>
+                <p>Google Rating</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="services">
+        <div className="container">
+          <div className="section-header">
+            <h2>Hizmetlerimiz</h2>
+            <div className="divider"></div>
+            <p className="subtitle">Yemek & İçecek kategorisinde hizmet veriyoruz</p>
+          </div>
+          
+          <div className="services-grid">
+            
+            <div className="service-card">
+              <div className="service-icon">🍽️</div>
+              <h3>Zengin Menü</h3>
+              <p>Yerel ve uluslararası lezzetler.</p>
+            </div>
+            <div className="service-card">
+              <div className="service-icon">🍷</div>
+              <h3>İçecek Çeşitleri</h3>
+              <p>Soğuk ve sıcak içecekler.</p>
+            </div>
+            <div className="service-card">
+              <div className="service-icon">🎂</div>
+              <h3>Özel Günler</h3>
+              <p>Doğum günü ve kutlamalar.</p>
+            </div>
+        
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section id="gallery" className="gallery">
+        <div className="container">
+          <div className="section-header">
+            <h2>Galeri</h2>
+            <div className="divider"></div>
+          </div>
+          
+          <div className="gallery-grid">
+            <div className="gallery-item">
+              <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400" alt="Yemek & İçecek" />
+              <p>İşletmemizden</p>
+            </div>
+            <div className="gallery-item">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400" alt="Yemek & İçecek" />
+              <p>Hizmetlerimiz</p>
+            </div>
+            <div className="gallery-item">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400" alt="Yemek & İçecek" />
+              <p>Ekibimiz</p>
+            </div>
+            <div className="gallery-item">
+              <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=400" alt="Yemek & İçecek" />
+              <p>Mekanımız</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="contact">
+        <div className="container">
+          <div className="section-header">
+            <h2>İletişim</h2>
+            <div className="divider"></div>
+          </div>
+          
+          <div className="contact-content">
+            <div className="contact-info">
+              <div className="info-item">
+                <div className="info-icon">📍</div>
+                <div>
+                  <h3>Adres</h3>
+                  <p>Çarşı, Belediye Meydanı no 4Bodrum, 48400 Bodrum/Muğla, Türkiye</p>
+                </div>
+              </div>
+              
+              <div className="info-item">
+                <div className="info-icon">📞</div>
+                <div>
+                  <h3>Telefon</h3>
+                  <p><a href="tel:902523637674">+902523637674</a></p>
+                </div>
+              </div>
+              
+              <div className="info-item">
+                <div className="info-icon">⏰</div>
+                <div>
+                  <h3>Çalışma Saatleri</h3>
+                  <p>Her Gün: 08:00 - 20:00</p>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <div className="info-icon">⭐</div>
+                <div>
+                  <h3>Google Reviews</h3>
+                  <p>4.8/5.0 (1043 yorum)</p>
+                </div>
+              </div>
+            </div>
+            
+            <form className="contact-form" onSubmit={handleSubmit}>
+              {submitted && (
+                <div className="success-message">
+                  ✅ Mesajınız başarıyla gönderildi!
+                </div>
+              )}
+              
+              <input
+                type="text"
+                name="name"
+                placeholder="Adınız Soyadınız"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              
+              <input
+                type="email"
+                name="email"
+                placeholder="E-posta Adresiniz"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Telefon Numaranız"
+                value={formData.phone}
+                onChange={handleChange}
+              />
+              
+              <input
+                type="text"
+                name="subject"
+                placeholder="Konu"
+                value={formData.subject}
+                onChange={handleChange}
+                required
+              />
+              
+              <textarea
+                name="message"
+                placeholder="Mesajınız"
+                rows={5}
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+              
+              <button type="submit" className="submit-button">
+                Gönder
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-content">
+            <div className="footer-section">
+              <h3>🍽️ Deniz Restaurant</h3>
+              <p>Yemek & İçecek - Kaliteli hizmet, uygun fiyatlar.</p>
+              <p className="footer-category">📁 Kategori: Yemek & İçecek</p>
+            </div>
+            
+            <div className="footer-section">
+              <h3>İletişim</h3>
+              <p>📞 +902523637674<br/>📍 Çarşı</p>
+            </div>
+            
+            <div className="footer-section">
+              <h3>Çalışma Saatleri</h3>
+              <p>Her Gün<br/>08:00 - 20:00</p>
+            </div>
+          </div>
+          
+          <div className="footer-bottom">
+            <p>&copy; 2026 Deniz Restaurant. Tüm hakları saklıdır.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  )
+}
+
+export default App
