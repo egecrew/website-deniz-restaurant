@@ -1,0 +1,19 @@
+{
+  "id": "daily-specials",
+  "name": "Daily Specials Section",
+  "screenId": "43a0cc9104ab48cb90b85841d9a1ce85",
+  "generatedAt": "2026-03-17T12:38:14.776Z",
+  "prompt": "Design a \"Günün Önerileri\" (Daily Specials) section for Deniz Restaurant, a Mediterranean seafood restaurant in Bodrum, Turkey.\n\nRequirements:\n- Turkish language content\n- Ocean blue (#1a365d) and gold (#d4af37) color scheme\n- Three featured dish cards with:\n  - Placeholder image area\n  - Dish name in Turkish\n  - Short description\n  - Price in Turkish Lira (₺)\n  - \"Sipariş Ver\" (Order) button\n- Section header with decorative gold divider\n- Featured dishes:\n  1. \"Günün Balığı\" - Today's fresh catch, ₺450\n  2. \"Karides Güveç\" - Shrimp casserole, ₺380\n  3. \"Akdeniz Mezze Tabağı\" - Mediterranean meze platter, ₺280\n- Modern, elegant typography (Playfair Display for headings, Inter for body)\n- Subtle hover effects on cards\n- Fully responsive grid layout\n- Premium restaurant aesthetic matching Bodrum coastal vibes",
+  "deviceType": "DESKTOP",
+  "dimensions": "2560x2624",
+  "theme": {
+    "colorMode": "DARK",
+    "customColor": "#d4af35",
+    "font": "WORK_SANS",
+    "roundness": "ROUND_EIGHT",
+    "saturation": 2
+  },
+  "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzU1NzdhZWEyOTY3NjRlYjNiYjAwNDY3YTBiZjU5YzUxEgsSBxCekPP4pRgYAZIBIwoKcHJvamVjdF9pZBIVQhM1NjcwMzcyNTExMDY3NzI5MjA4&filename=&opi=96797242",
+  "imageUrl": "https://lh3.googleusercontent.com/aida/ADBb0uii4oUMTtq1l3QSc5xsKM-_nKzwo08Xhcnal0Edie3493sPlTpuKnbwOwfmj9Fv7oL-ZFyCrPlbdxaIBemXaMpl9sJJ5T3N0LQPzYUfaTHUXX9yhnqEqCHZ6FTOkISZmfBBEnB3PMczDjKCAzxPCUkaHDvDsdjfsPOcAP7n3PoSU1vpLxnusVk9ZpiU1_3ihQio4BKe2iLXP5MHM2bR1xiXnTurN369A7oNMv11pub2_9AoXofONAI6m8Y",
+  "success": true
+}

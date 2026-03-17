@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@700&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d4af35",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#1a1814",
+                        "ocean-blue": "#1a365d",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .gold-wave {
+            background: linear-gradient(90deg, transparent, #d4af35, transparent);
+            height: 2px;
+            width: 120px;
+            margin: 1.5rem auto;
+            position: relative;
+        }
+        .gold-wave::after {
+            content: '✻';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #1a1814;
+            padding: 0 10px;
+            color: #d4af35;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="border-b border-primary/20 px-6 lg:px-20 py-4 bg-background-light dark:bg-background-dark sticky top-0 z-50">
+<div class="max-w-7xl mx-auto flex items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">sailing</span>
+<h2 class="text-xl font-bold tracking-tight font-serif text-primary">Deniz Restaurant</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="hover:text-primary transition-colors text-sm font-medium" href="#">Menü</a>
+<a class="text-primary text-sm font-semibold border-b-2 border-primary" href="#">Günün Önerileri</a>
+<a class="hover:text-primary transition-colors text-sm font-medium" href="#">Rezervasyon</a>
+<a class="hover:text-primary transition-colors text-sm font-medium" href="#">Hakkımızda</a>
+<a class="hover:text-primary transition-colors text-sm font-medium" href="#">İletişim</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex items-center justify-center rounded-lg h-10 px-6 bg-primary text-background-dark text-sm font-bold hover:bg-primary/90 transition-all">
+                    Giriş Yap
+                </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 py-12 px-6 lg:px-20">
+<div class="max-w-7xl mx-auto">
+<!-- Header Section -->
+<div class="text-center mb-16">
+<h1 class="font-serif text-4xl md:text-5xl lg:text-6xl dark:text-slate-100 mb-4">Günün Önerileri</h1>
+<div class="gold-wave"></div>
+<p class="max-w-2xl mx-auto text-slate-600 dark:text-slate-400 font-sans italic">
+                    Ege'nin taze rüzgarları ve Bodrum'un bereketli sularından bugün masanıza konuk olan seçkin lezzetler.
+                </p>
+</div>
+<!-- Specials Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Günün Balığı -->
+<div class="group bg-white dark:bg-slate-800/40 rounded-xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300 border border-primary/10">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Günün taze yakalanmış ızgara balığı servisi" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSOMxeFWyUMnskwzKRD8OVq6aloixwyZ9Z41YWxdWV_qDUZroZX4LVVV_oGMo3AZaOCjZjxakahOrpa4rtiOrDV_sCRlqIQdZJ1buZnlTCzzq0plEwir2v-Fh20uFgvsDVHzbn0IdoqowtbRZT9iFPIc3bm5laUj7yTD_UFSXNnjAoBSQ3GCgitSJnh0D2BS82bj8OzseBwSgzTkZfYKUAB-hAnM5z1ck5_0bETszgLSVBY9lWAV5bpNsVQW7Nr8xT3ClhIky3Orw')">
+</div>
+<div class="absolute top-4 right-4 bg-primary text-background-dark px-3 py-1 rounded-full text-sm font-bold">
+                            Taze Yakalandı
+                        </div>
+</div>
+<div class="p-8 flex flex-col h-full">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-serif text-2xl text-ocean-blue dark:text-primary">Günün Balığı</h3>
+<span class="text-xl font-bold text-slate-700 dark:text-slate-200">₺450</span>
+</div>
+<p class="font-sans text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                            Bodrum sularından taze yakalanmış, günlük olarak değişen mevsim balığı. Kömür ateşinde ızgara veya buğulama seçeneğiyle.
+                        </p>
+<button class="mt-auto flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-primary text-background-dark font-bold hover:shadow-lg hover:shadow-primary/20 transition-all">
+<span class="material-symbols-outlined text-xl">shopping_cart</span>
+                            Sipariş Ver
+                        </button>
+</div>
+</div>
+<!-- Card 2: Karides Güveç -->
+<div class="group bg-white dark:bg-slate-800/40 rounded-xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300 border border-primary/10">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Toprak güveçte soslu karides tabağı" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXr6dga3G4A4plHxzLEgKnoppaxGI0k0mOPvd8AJ-KddOyuUTaz6v0lHAKkt-cY53406jaKKfIT0o_U10wy2ccfMwURY-YoH-s3JADdKAc7JYuUN966ar0KG5lPt1ZsIjX3pcN4Ot_KCrNrejbesI8xGnoWqHtzM8vGoJHvAbJcJx8I50rvUlITd0z-PfPE_BfcxAqcEJxORA1tzd3SdD63Ac6_GRYFgd4ZNd-p3TsILK2cWmrJH0COKy-KDaGPaXiJ_2YWZxkt84')">
+</div>
+<div class="absolute top-4 right-4 bg-primary text-background-dark px-3 py-1 rounded-full text-sm font-bold">
+                            Şefin Seçimi
+                        </div>
+</div>
+<div class="p-8 flex flex-col h-full">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-serif text-2xl text-ocean-blue dark:text-primary">Karides Güveç</h3>
+<span class="text-xl font-bold text-slate-700 dark:text-slate-200">₺380</span>
+</div>
+<p class="font-sans text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                            Toprak güveçte bol tereyağlı, sarımsaklı ve ev yapımı acı sos ile harmanlanmış jumbo karidesler.
+                        </p>
+<button class="mt-auto flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-primary text-background-dark font-bold hover:shadow-lg hover:shadow-primary/20 transition-all">
+<span class="material-symbols-outlined text-xl">shopping_cart</span>
+                            Sipariş Ver
+                        </button>
+</div>
+</div>
+<!-- Card 3: Akdeniz Mezze Tabağı -->
+<div class="group bg-white dark:bg-slate-800/40 rounded-xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300 border border-primary/10">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Çeşitli Ege mezelerinden oluşan zengin meze tabağı" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsVkeKWR6MuxO4n2Te08VnQDR3c34RB31CKGI42KXItUSMqrGX9neyL5h2_n5m8-30tiquPQ2bxbkqwBGBCaSF9PB05r4SOwKLisDdAZKjAtpWv_exZarxJLiUjegBcji1QPA-unLbNT9v0nhZbIB0Hk6H3ejcTH07HTPC_Y-4taZObWszlqqphuM8gOFxjkK59CfYb2C5PNtHFGsKDzKUkCTvNsKfu3rr8e86x_vHp6mzNvkcb3wd8cW7enOVK7sj82ZLIhcl1lM')">
+</div>
+<div class="absolute top-4 right-4 bg-primary text-background-dark px-3 py-1 rounded-full text-sm font-bold">
+                            Vejetaryen Dostu
+                        </div>
+</div>
+<div class="p-8 flex flex-col h-full">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-serif text-2xl text-ocean-blue dark:text-primary">Akdeniz Mezze Tabağı</h3>
+<span class="text-xl font-bold text-slate-700 dark:text-slate-200">₺280</span>
+</div>
+<p class="font-sans text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                            Dağ kekiği ve soğuk sıkım zeytinyağı ile hazırlanan, Ege'nin en sevilen 6 farklı taze mezze çeşidi.
+                        </p>
+<button class="mt-auto flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-primary text-background-dark font-bold hover:shadow-lg hover:shadow-primary/20 transition-all">
+<span class="material-symbols-outlined text-xl">shopping_cart</span>
+                            Sipariş Ver
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-[#12100c] border-t border-primary/10 py-16 px-6 lg:px-20">
+<div class="max-w-7xl mx-auto flex flex-col items-center">
+<div class="flex items-center gap-2 mb-8 text-primary">
+<span class="material-symbols-outlined text-4xl">sailing</span>
+<span class="font-serif text-2xl font-bold">Deniz Restaurant</span>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mb-10">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Gizlilik Politikası</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Kullanım Koşulları</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Bodrum Rehberi</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Kariyer</a>
+</div>
+<div class="flex gap-6 mb-8">
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined">call</span>
+</a>
+</div>
+<p class="text-slate-500 dark:text-slate-500 text-sm font-sans">
+                © 2024 Deniz Restaurant Bodrum. Tüm hakları saklıdır. Geleneksel Ege Misafirperverliği.
+            </p>
+</div>
+</footer>
+</div>
+</body></html>

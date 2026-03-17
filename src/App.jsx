@@ -91,7 +91,7 @@ function App() {
           
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-10">
-            {['about', 'services', 'gallery', 'contact'].map((section) => (
+            {['about', 'specials', 'services', 'gallery', 'contact'].map((section) => (
               <a
                 key={section}
                 href={`#${section}`}
@@ -101,6 +101,7 @@ function App() {
                 }`}
               >
                 {section === 'about' && 'Hakkımızda'}
+                {section === 'specials' && 'Günün Önerileri'}
                 {section === 'services' && 'Lezzetlerimiz'}
                 {section === 'gallery' && 'Galeri'}
                 {section === 'contact' && 'İletişim'}
@@ -128,7 +129,7 @@ function App() {
           menuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}>
           <div className="flex flex-col p-6 gap-4">
-            {['about', 'services', 'gallery', 'contact'].map((section) => (
+            {['about', 'specials', 'services', 'gallery', 'contact'].map((section) => (
               <a
                 key={section}
                 href={`#${section}`}
@@ -136,6 +137,7 @@ function App() {
                 className="text-white text-lg font-medium py-2 hover:text-primary transition-colors"
               >
                 {section === 'about' && 'Hakkımızda'}
+                {section === 'specials' && 'Günün Önerileri'}
                 {section === 'services' && 'Lezzetlerimiz'}
                 {section === 'gallery' && 'Galeri'}
                 {section === 'contact' && 'İletişim'}
@@ -289,6 +291,103 @@ function App() {
                 <p className="font-serif text-6xl font-bold text-primary relative">⭐ 4.8</p>
                 <p className="text-lg opacity-90 mt-4 relative">Google Değerlendirmesi</p>
                 <p className="text-sm opacity-70 mt-2 relative">1043+ mutlu müşteri</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== DAILY SPECIALS SECTION (NEW - Stitch SDK generated with UPPERCASE deviceType fix) ===== */}
+      <section id="specials" className="bg-slate-900 py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-4">Günün Önerileri</h2>
+            {/* Gold Wave Divider (from Stitch design) */}
+            <div className="relative w-32 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto my-6">
+              <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-900 px-3 text-primary text-sm">✻</span>
+            </div>
+            <p className="max-w-2xl mx-auto text-slate-400 italic">
+              Ege'nin taze rüzgarları ve Bodrum'un bereketli sularından bugün masanıza konuk olan seçkin lezzetler.
+            </p>
+          </div>
+
+          {/* Specials Grid (Stitch SDK Design) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Card 1: Günün Balığı */}
+            <div className="group bg-slate-800/40 rounded-xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300 border border-primary/10">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?w=600"
+                  alt="Günün taze balığı"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-slate-900 px-3 py-1 rounded-full text-sm font-bold">
+                  Taze Yakalandı
+                </div>
+              </div>
+              <div className="p-8 flex flex-col">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="font-serif text-2xl text-primary">Günün Balığı</h3>
+                  <span className="text-xl font-bold text-white">₺450</span>
+                </div>
+                <p className="text-slate-400 mb-8 leading-relaxed">
+                  Bodrum sularından taze yakalanmış, günlük olarak değişen mevsim balığı. Kömür ateşinde ızgara veya buğulama seçeneğiyle.
+                </p>
+                <button className="mt-auto flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-primary text-slate-900 font-bold hover:shadow-lg hover:shadow-primary/20 transition-all">
+                  🛒 Sipariş Ver
+                </button>
+              </div>
+            </div>
+
+            {/* Card 2: Karides Güveç */}
+            <div className="group bg-slate-800/40 rounded-xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300 border border-primary/10">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1625943553852-781c6dd46faa?w=600"
+                  alt="Karides güveç"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-slate-900 px-3 py-1 rounded-full text-sm font-bold">
+                  Şefin Seçimi
+                </div>
+              </div>
+              <div className="p-8 flex flex-col">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="font-serif text-2xl text-primary">Karides Güveç</h3>
+                  <span className="text-xl font-bold text-white">₺380</span>
+                </div>
+                <p className="text-slate-400 mb-8 leading-relaxed">
+                  Toprak güveçte bol tereyağlı, sarımsaklı ve ev yapımı acı sos ile harmanlanmış jumbo karidesler.
+                </p>
+                <button className="mt-auto flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-primary text-slate-900 font-bold hover:shadow-lg hover:shadow-primary/20 transition-all">
+                  🛒 Sipariş Ver
+                </button>
+              </div>
+            </div>
+
+            {/* Card 3: Akdeniz Mezze Tabağı */}
+            <div className="group bg-slate-800/40 rounded-xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300 border border-primary/10">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1544982503-9f984c14501a?w=600"
+                  alt="Akdeniz mezze tabağı"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-slate-900 px-3 py-1 rounded-full text-sm font-bold">
+                  Vejetaryen Dostu
+                </div>
+              </div>
+              <div className="p-8 flex flex-col">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="font-serif text-2xl text-primary">Akdeniz Mezze Tabağı</h3>
+                  <span className="text-xl font-bold text-white">₺280</span>
+                </div>
+                <p className="text-slate-400 mb-8 leading-relaxed">
+                  Dağ kekiği ve soğuk sıkım zeytinyağı ile hazırlanan, Ege'nin en sevilen 6 farklı taze mezze çeşidi.
+                </p>
+                <button className="mt-auto flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-primary text-slate-900 font-bold hover:shadow-lg hover:shadow-primary/20 transition-all">
+                  🛒 Sipariş Ver
+                </button>
               </div>
             </div>
           </div>
