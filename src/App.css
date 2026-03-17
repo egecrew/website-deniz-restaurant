@@ -55,6 +55,8 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Prevent horizontal overflow on wide viewports */
+  overflow-x: hidden;
 }
 
 body {
@@ -62,6 +64,15 @@ body {
   color: #1e293b;
   line-height: 1.7;
   background: var(--background-light);
+  /* Prevent horizontal overflow */
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Fix for all sections to prevent overflow at 1920px+ */
+.app {
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 /* ============ TYPOGRAPHY ============ */
@@ -94,11 +105,22 @@ body {
 
 /* ============ LAYOUT ============ */
 .min-h-screen { min-height: 100vh; }
-.max-w-7xl { max-width: 80rem; }
-.max-w-6xl { max-width: 72rem; }
-.max-w-4xl { max-width: 56rem; }
-.max-w-xl { max-width: 36rem; }
-.max-w-md { max-width: 28rem; }
+.max-w-7xl { max-width: 80rem; width: 100%; }
+.max-w-6xl { max-width: 72rem; width: 100%; }
+.max-w-4xl { max-width: 56rem; width: 100%; }
+.max-w-xl { max-width: 36rem; width: 100%; }
+.max-w-md { max-width: 28rem; width: 100%; }
+
+/* Responsive container for ultra-wide screens */
+@media (min-width: 1920px) {
+  .max-w-7xl { max-width: min(80rem, 90vw); }
+  .max-w-6xl { max-width: min(72rem, 85vw); }
+}
+
+@media (min-width: 2560px) {
+  .max-w-7xl { max-width: min(90rem, 85vw); }
+  .max-w-6xl { max-width: min(80rem, 80vw); }
+}
 
 .mx-auto { margin-left: auto; margin-right: auto; }
 .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
@@ -211,6 +233,56 @@ body {
   .lg\:px-12 { padding-left: 3rem; padding-right: 3rem; }
   .lg\:text-4xl { font-size: 2.25rem; }
   .lg\:text-8xl { font-size: 6rem; }
+}
+
+/* XL breakpoint for 1280px+ */
+@media (min-width: 1280px) {
+  .xl\:gap-10 { gap: 2.5rem; }
+}
+
+/* ============ HEADER FIX FOR LARGE VIEWPORTS ============ */
+header.fixed {
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+header.fixed > div {
+  max-width: min(80rem, calc(100vw - 3rem));
+}
+
+/* Fix navigation overflow */
+header nav {
+  flex-shrink: 1;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  white-space: nowrap;
+}
+
+/* ============ HERO SECTION CONTRAST FIXES ============ */
+/* Improved overlay for better text contrast */
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 54, 93, 0.75) 0%,
+    rgba(26, 54, 93, 0.60) 40%,
+    rgba(26, 54, 93, 0.85) 100%
+  ) !important;
+}
+
+/* Hero title text shadow for better readability */
+.hero-title-shadow {
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero subtitle improved contrast */
+.hero-subtitle-shadow {
+  text-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.4),
+    0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* ============ STITCH-STYLE COMPONENTS ============ */

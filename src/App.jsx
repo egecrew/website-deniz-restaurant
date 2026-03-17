@@ -89,29 +89,29 @@ function App() {
             </h1>
           </a>
           
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-10">
+          {/* Desktop Navigation - Responsive gap for large screens */}
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-10">
             {['about', 'specials', 'services', 'gallery', 'contact'].map((section) => (
               <a
                 key={section}
                 href={`#${section}`}
                 onClick={(e) => { e.preventDefault(); scrollToSection(section) }}
-                className={`text-sm font-semibold transition-colors hover:text-primary ${
+                className={`text-sm font-semibold transition-colors hover:text-primary whitespace-nowrap ${
                   scrolled ? 'text-slate-700' : 'text-white/90'
                 }`}
               >
                 {section === 'about' && 'Hakkımızda'}
-                {section === 'specials' && 'Günün Önerileri'}
-                {section === 'services' && 'Lezzetlerimiz'}
+                {section === 'specials' && 'Öneriler'}
+                {section === 'services' && 'Menü'}
                 {section === 'gallery' && 'Galeri'}
                 {section === 'contact' && 'İletişim'}
               </a>
             ))}
             <button 
               onClick={() => scrollToSection('contact')}
-              className="bg-primary hover:bg-primary-dark text-slate-900 px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg hover:shadow-gold"
+              className="bg-primary hover:bg-primary-dark text-slate-900 px-5 py-2 rounded-full text-sm font-bold transition-all shadow-lg hover:shadow-gold whitespace-nowrap"
             >
-              Rezervasyon Yap
+              Rezervasyon
             </button>
           </nav>
 
@@ -149,9 +149,9 @@ function App() {
 
       {/* ===== HERO SECTION (Stitch-generated design) ===== */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background with Gradient Overlay */}
+        {/* Background with Gradient Overlay - Enhanced contrast */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-blue/70 via-brand-blue/50 to-brand-blue/80 z-10" />
+          <div className="absolute inset-0 hero-overlay z-10" />
           <img 
             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920"
             alt="Bodrum coastal view"
@@ -181,11 +181,11 @@ function App() {
             </span>
           </div>
 
-          {/* Headlines */}
-          <h1 className="font-serif text-primary text-5xl md:text-7xl lg:text-8xl leading-tight tracking-tight mb-6">
+          {/* Headlines - Enhanced contrast with text shadows */}
+          <h1 className="font-serif text-primary text-5xl md:text-7xl lg:text-8xl leading-tight tracking-tight mb-6 hero-title-shadow">
             Deniz Restaurant
           </h1>
-          <h2 className="text-white/90 text-lg md:text-2xl font-light tracking-[0.15em] uppercase italic mb-10">
+          <h2 className="text-white text-lg md:text-2xl font-light tracking-[0.15em] uppercase italic mb-10 hero-subtitle-shadow">
             Bodrum'un Kalbinde, Denizin Tadında
           </h2>
 
