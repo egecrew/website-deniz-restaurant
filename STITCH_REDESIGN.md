@@ -121,8 +121,40 @@ stitch-designs/
 ├── gallery.png         # Gallery screenshot
 ├── footer.html         # Footer HTML
 ├── footer.png          # Footer screenshot
+├── daily-specials.html # Daily Specials section (NEW - with deviceType fix)
+├── daily-specials.png  # Daily Specials screenshot
+├── daily-specials.json # Daily Specials metadata
 └── manifest.json       # Generation manifest
 ```
+
+## CRITICAL: deviceType Must Be UPPERCASE
+
+The Stitch API expects **UPPERCASE** deviceType values (`DESKTOP`, `MOBILE`, `TABLET`), but the SDK's `project.generate()` method doesn't convert them.
+
+### The Fix
+
+Instead of using the SDK's convenience method:
+```javascript
+// ❌ This may fail - SDK doesn't uppercase the deviceType
+const screen = await project.generate(prompt, 'desktop');
+```
+
+Use `stitch.callTool()` directly with UPPERCASE:
+```javascript
+// ✅ This works - manually pass UPPERCASE deviceType
+const result = await stitch.callTool("generate_screen_from_text", {
+  projectId: projectId,
+  prompt: prompt,
+  deviceType: "DESKTOP"  // UPPERCASE!
+});
+```
+
+### Proof of Fix
+
+The Daily Specials section was generated successfully using this approach:
+- Screen ID: `43a0cc9104ab48cb90b85841d9a1ce85`
+- Dimensions: 2560x2624
+- Theme: Dark mode with gold accent (#d4af35)
 
 ## Deployment
 
